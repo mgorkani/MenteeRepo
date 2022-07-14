@@ -2,7 +2,12 @@ import SwiftUI
 
 struct CreditCardView: View {
     var body: some View {
-        Text("Credit Card View")
+        VStack(spacing: 20)  {
+            ButtonView(title: "Paypal", backgroundColor: Color.baseDarkBlue, iconName: "paypal-logo",foregroundColor: .white)
+            ButtonView(title: "Add Credit Card", backgroundColor: Color.baseDarkBlue, iconName: nil,foregroundColor: .white)
+            ButtonView(title: "Credit or Debit", backgroundColor: Color.baseLightBlue, iconName: nil,foregroundColor: .blue)
+        }
+        .padding(.horizontal)
     }
 }
 
